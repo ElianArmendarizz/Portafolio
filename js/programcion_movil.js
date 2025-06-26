@@ -17,22 +17,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const griegoImg = document.querySelector(".griego2");
+    const griegoImg = document.querySelector(".griego1");
+    
+    // Validar que el elemento exista antes de usarlo
+    if (!griegoImg) {
+        console.warn("Elemento .griego1 no encontrado. Puede estar bloqueado por el navegador.");
+        return;
+    }
 
     function fadeInOnScroll() {
         const rect = griegoImg.getBoundingClientRect();
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-        if (rect.top < windowHeight * 0.75) { // Si entra en el 75% de la pantalla
-            griegoImg.style.opacity = "0.3";
+        if (rect.top < windowHeight * 0.75) {
+            griegoImg.style.opacity = "0.4";
             griegoImg.style.transform = "translateX(0)";
             griegoImg.style.transition = "opacity 1.5s ease-in-out, transform 1.5s ease-in-out";
         }
     }
 
     window.addEventListener("scroll", fadeInOnScroll);
-    fadeInOnScroll(); // Llamamos a la función al cargar por si ya está en pantalla
+    fadeInOnScroll(); 
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const enlaceProgramacion = document.querySelector('a[href="#programacion-movil"]');
