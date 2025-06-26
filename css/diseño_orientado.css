@@ -335,3 +335,27 @@ html {
     font-weight: bold;
     cursor: pointer;
 }
+/* ======== */
+.e-cardabajo {
+    margin:30px auto;
+    margin-bottom: 0px;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+    position: relative;
+    width: 1540px;
+    padding: 30px;
+    height: 720px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #1b1a26;
+}
+.e-cardabajo h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.e-cardabajo p {
+    text-align: justify;
+    color: #fff;
+}
