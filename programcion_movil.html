@@ -63,11 +63,41 @@
                         <div class="name">cliclea para ver la imagen</div>
                     </div>
                 </div>
+            </div>
 
+            <div class="e-card playing">
+                <div class="image"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="infotop">
+                    Proyecto Final
+                    <br>
+                    <div class="name">Diagrama del proyecto de moviles</div>
+                    <br>
+                    <img id="expandible" class="imgtarea expandible" src="img/app.png" alt="">
+                    <div class="name">cliclea para ver la imagen</div>
+                    <br>
+                    <!-- Botón para abrir el PDF -->
+                    <button class="abrir-pdf" data-pdf="pdfs/app.pdf">Ver Documento PDF</button>
+                </div>
             </div>
         </div>
+    </div>
 
 
+    <!-- Modal para ver PDF -->
+    <div id="modalPDF" class="modal-pdf">
+        <div class="modal-content-pdf">
+            <span class="cerrar-pdf" id="cerrarPDF">&times;</span>
+            <iframe id="visorPDF" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Modal para ver imagen ampliada -->
+    <div id="modalImagen" style="display:none;" class="modal">
+        <span id="cerrarModal" class="cerrar">&times;</span>
+        <img id="imgAmpliada" class="modal-contenido" alt="Imagen ampliada">
     </div>
 
     <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
