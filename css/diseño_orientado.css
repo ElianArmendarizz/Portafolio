@@ -337,14 +337,14 @@ html {
 }
 /* ======== */
 .e-cardabajo {
-    margin:30px auto;
+    margin:20px auto;
     margin-bottom: 0px;
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
     position: relative;
     width: 1540px;
     padding: 30px;
-    height: 720px;
+    height: 820px;
     border-radius: 16px;
     overflow: hidden;
     background-color: #1b1a26;
@@ -352,10 +352,63 @@ html {
 .e-cardabajo h1 {
     text-align: center;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 .e-cardabajo p {
     text-align: justify;
     color: #fff;
+}
+
+.modal-pdf {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-pdf {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-content-pdf iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cerrar-pdf {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.abrir-pdf {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.abrir-pdf:hover {
+    background-color: #218838;
 }
