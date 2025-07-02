@@ -72,7 +72,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const botonesPDF = document.querySelectorAll(".abrir-pdf");
+    const modalPDF = document.getElementById("modalPDF");
+    const visorPDF = document.getElementById("visorPDF");
+    const cerrarPDF = document.getElementById("cerrarPDF");
 
+    botonesPDF.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            const archivoPDF = btn.getAttribute("data-pdf");
+            visorPDF.src = archivoPDF;
+            modalPDF.style.display = "flex";
+        });
+    });
+
+    cerrarPDF.addEventListener("click", function () {
+        modalPDF.style.display = "none";
+        visorPDF.src = ""; // limpia para evitar que el PDF siga cargando
+    });
+
+    modalPDF.addEventListener("click", function (e) {
+        if (e.target === modalPDF) {
+            modalPDF.style.display = "none";
+            visorPDF.src = "";
+        }
+    });
+});
 
 
 
