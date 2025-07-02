@@ -195,85 +195,148 @@
                         <div class="name">cliclea para ver la imagen</div>
                     </div>
                 </div>
+
+                <div class="e-card playing">
+                    <div class="image"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="infotop">
+                        Proyecto Final
+                        <br>
+                        <div class="name">Diagrama del proyecto de moviles</div>
+                        <br>
+                        <img id="expandible" class="imgtarea expandible" src="img/app.png" alt="">
+                        <div class="name">cliclea para ver la imagen</div>
+                        <br>
+                        <!-- Botón para abrir el PDF -->
+                        <button class="abrir-pdf" data-pdf="pdfs/app.pdf">Ver Documento PDF</button>
+                    </div>
+                </div>
+
             </div>
             <div class="e-cardabajo">
                 <div class="image"></div>
                 <div class="infotops">
                     <h1>Resumen de Diagramas UML</h1>
                     <br>
-                    <h2>Diagramas de Objeto</h2>
+                    <h2>Diagrama de Componentes</h2>
                     <p>
-                        El diagrama de objeto representa una instancia específica del sistema en un momento determinado.
-                        Es
-                        una representación concreta de objetos (instancias de clases), sus atributos con valores
-                        actuales y
-                        las relaciones que existen entre ellos. Este tipo de diagrama se utiliza principalmente para
-                        visualizar ejemplos de estructuras de objetos que se generan en tiempo de ejecución, ayudando a
-                        comprender cómo se comportan las instancias reales del sistema y cómo interactúan. Es muy útil
-                        para
-                        depurar, validar estructuras de clases y comprender mejor relaciones complejas en sistemas
-                        orientados a objetos.
+                        El diagrama de componentes es uno de los diagramas estructurales del lenguaje UML (Unified
+                        Modeling Language)
+                        que tiene como finalidad representar los elementos físicos que constituyen el sistema, de manera
+                        que hasta pueden
+                        ser bibliotecas, archivos ejecutables, servicios, paquetes, etc., que se agrupan para formar una
+                        aplicación final.
                     </p>
                     <br>
-                    <h2>Diagramas de Componente</h2>
+                    <h2>Aplicación en el desarrollo</h2>
                     <p>
-                        Los diagramas de componente muestran cómo un sistema está dividido en partes físicas llamadas
-                        componentes, y cómo interactúan entre sí. Cada componente puede representar un módulo, librería,
-                        archivo ejecutable, o subsistema. Estos diagramas son esenciales en la etapa de diseño y
-                        arquitectura del sistema, ya que permiten visualizar la organización del software desde una
-                        perspectiva modular. También muestran las interfaces que cada componente expone y requiere,
-                        facilitando la comprensión de dependencias entre distintas partes del sistema y su posible
-                        reutilización o reemplazo.
+                        Su deber es representar cómo se encuentra organizada la parte del sistema en términos de
+                        implementación y
+                        despliegue del mismo. Esto será muy útil en el desarrollo y mantenimiento del software, pues su
+                        función es mostrar
+                        cómo los componentes se ensamblan (donde existen dependencias entre los componentes y qué
+                        interfaces exponen).
+                        Este tipo de diagrama también es importante para planear el empaquetado del sistema, la
+                        distribución del sistema
+                        en un entorno de producción y la reutilización de módulos para otros sistemas.
                     </p>
                     <br>
-                    <h2>Diagramas de Actividades</h2>
+                    <h2>Diagrama de Actividades</h2>
                     <p>
-                        El diagrama de actividades se utiliza para modelar flujos de trabajo, tanto en procesos del
-                        sistema
-                        como en procesos de negocio. Representa una secuencia de acciones o actividades, así como
-                        decisiones, bifurcaciones, concurrencia y uniones. Es útil para visualizar algoritmos,
-                        operaciones
-                        complejas y casos de uso que implican múltiples pasos. También permite identificar cuellos de
-                        botella, caminos alternativos y condiciones para la ejecución de ciertas tareas. Su estructura
-                        basada en nodos (actividades) y transiciones lo hace muy intuitivo y visual.
+                        El diagrama de actividades se presenta como un recurso que sirve para representar procesos y
+                        flujos de trabajo
+                        de tal forma que su utilización más común es para representar la simulación de procesos de
+                        empresas u operaciones
+                        dentro de un sistema. Por ejemplo, si se pretende representar el proceso de compra dentro de una
+                        tienda virtual,
+                        el diagrama de actividades nos permitirá visualizar cada una de las etapas del proceso en forma
+                        secuencial como
+                        se ilustra en los siguientes: desde que el usuario ingresa a la página web, elige productos, los
+                        agrega al carrito
+                        de compras, escribe los detalles de pago y asegura la compra. Cada una de esas acciones las
+                        podemos representar en
+                        el diagrama como una actividad propia, en donde presentaremos la forma en la que se sigue la
+                        parte lógica de un
+                        proceso y las decisiones que se deben establecer en los momentos de decisión. El objetivo
+                        fundamental de ese
+                        diagrama es el de presentar de forma comprensible, el modo en que se enlazan las actividades,
+                        porque facilita
+                        muchísimo la identificación de los errores, las redundancias o las ineficacias dentro de un
+                        proceso. Al presentar
+                        todo el flujo del proceso de una forma gráfica, los desarrolladores y analistas pueden descubrir
+                        exactamente donde
+                        está el fallo, o un paso que es redundante o en el que se produce ineficacia, de forma que
+                        resulta muy útil para
+                        comunicar cómo se debe hacer un proceso a los miembros técnicos del equipo o a los usuarios o
+                        interesados que no
+                        tengan la formación técnica necesaria. Los diagramas de actividades también son útiles durante
+                        las pruebas, ya que
+                        permiten generar casos de prueba con el fin de expresar distintos caminos del proceso.
                     </p>
                     <br>
-                    <h2>Diagrama de Estados</h2>
+                    <h2>Diagrama de Objetos</h2>
                     <p>
-                        Este diagrama muestra los distintos estados que puede asumir un objeto a lo largo de su ciclo de
-                        vida, así como los eventos que provocan los cambios de estado. Es especialmente útil para
-                        modelar
-                        comportamientos dinámicos en sistemas donde el orden de las acciones depende del estado actual
-                        del
-                        objeto, como en sistemas embebidos, videojuegos o procesos de control. Incluye elementos como
-                        estados, transiciones, eventos, acciones internas y condiciones de entrada y salida,
-                        proporcionando
-                        una visión clara de cómo responde un objeto ante diferentes estímulos.
+                        El objetivo fundamental del diagrama de objetos es mostrar el estado del sistema en un momento
+                        determinado. Al
+                        contrario que en otros esquemas que representan estructuras genéricas o procesos generales, este
+                        esquema nos
+                        aporta un modelo estático de las configuraciones de las entidades del sistema en una situación
+                        específica. En el
+                        diagrama de objetos presentamos cotas de ejemplos de clases, es decir, objetos que ya tienen sus
+                        características
+                        determinadas y las relaciones entre éstos ya establecidas previamente. Por ejemplo, un objeto
+                        "Cliente" podría
+                        tener valores concretos o atributos tales como nombre: "Ana Pérez", dirección: "Calle 123" y
+                        método de pago:
+                        "Crédito tarjeta", etc. Este tipo de esquema se utiliza de forma especial en las fases de
+                        análisis y de prueba.
+                        Permite comprobar que los objetos interactúan correctamente y que los valores se asignan
+                        adecuadamente, así como
+                        las relaciones entre las entidades son coherentes. También puede ser muy útil para la depuración
+                        de errores, ya
+                        que permite ver qué hace el sistema cuando presenta un estado determinado.
                     </p>
                     <br>
-                    <h2>Diagrama de Secuencias</h2>
+                    <h2>Diagrama de Secuencia</h2>
                     <p>
-                        El diagrama de secuencias representa la interacción entre diferentes objetos o componentes del
-                        sistema organizados en un orden temporal. Muestra cómo se envían mensajes o llamadas entre
-                        objetos y
-                        en qué momento ocurren durante un escenario específico. Es muy utilizado para modelar casos de
-                        uso,
-                        representar flujos de lógica detallados, y entender cómo fluye la información dentro del
-                        sistema. La
-                        claridad de sus líneas de vida y mensajes lo convierte en una herramienta clave para diseñar y
-                        validar la comunicación entre clases o servicios.
-                    </p>
-                    <br>
-                    <h2>Diagrama de Clases</h2>
-                    <p>
-                        Es uno de los diagramas más fundamentales de UML. El diagrama de clases modela la estructura
-                        estática del sistema, mostrando las clases que lo componen, sus atributos (propiedades), métodos
-                        (operaciones) y las relaciones entre ellas, como herencia, asociación, agregación o composición.
-                        Es
-                        esencial en la programación orientada a objetos, ya que permite visualizar y planificar la
-                        arquitectura lógica del software. Facilita la reutilización, extensión y mantenimiento del
-                        código,
-                        además de servir como base para otros diagramas UML.
+                        El diagrama de secuencia puede considerarse como una potente herramienta para ayudar a entender
+                        cómo las
+                        interacciones de los objetos o entidades del sistema se desarrollan a lo largo del tiempo. Ahora
+                        bien, el diagrama
+                        de secuencia se distingue de otros diagramas que muestran estructuras estáticas o procesos en
+                        general, ya que se
+                        centra precisamente en la dimensión del tiempo y del orden. De hecho, podríamos compararlo a
+                        observar una
+                        conversación que puede darse entre las distintas partes del sistema, en la que podemos ver el
+                        aspecto que va
+                        tomando esa conversación paso a paso, para conseguir realizar una determinada tarea. Por poner
+                        un ejemplo, vamos a
+                        modelar el proceso de login de un usuario dentro de una aplicación, donde el diagrama de
+                        secuencia nos mostraría
+                        claramente qué interacción se obtiene por parte del usuario hacia el sistema, incluyendo la
+                        solicitud de inicio de
+                        sesión, la verificación de credenciales, la aceptación/rechazo y posterior redirección, etc. En
+                        el diagrama de
+                        secuencia, cada una de las interacciones se representa mediante flechas y el orden de ejecución
+                        de éstas está
+                        también determinado por la posición vertical de las interacciones en el diagrama. Una de las
+                        grandes ventajas de
+                        este diagrama es que permite detectar errores en la lógica temporal del sistema, por ejemplo,
+                        cuando una validación
+                        se efectúa posteriormente a una operación que dependía de ella, lo cual se puede subsumir dentro
+                        de un error de
+                        secuencia. También, a través del diagrama de secuencia se puede detectar redundancias, procesos
+                        innecesarios o
+                        bien dependencias que podrían provocar problemas de sincronización. El diagrama de secuencia es
+                        especialmente útil
+                        cuando se tiene que desarrollar un sistema complejo con múltiples capas y/o servicios que se
+                        envían y reciben
+                        mensajes. Permite establecer de forma clara cuáles son las responsabilidades que asumen los
+                        diferentes componentes
+                        y cómo se coordinan entre ellos en el tiempo. Esto facilita el desarrollo y la posterior
+                        mantenibilidad del sistema.
                     </p>
                 </div>
             </div>
@@ -281,6 +344,13 @@
     </div>
 
 
+    <!-- Modal para ver PDF -->
+    <div id="modalPDF" class="modal-pdf">
+        <div class="modal-content-pdf">
+            <span class="cerrar-pdf" id="cerrarPDF">&times;</span>
+            <iframe id="visorPDF" src="" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <!-- Modal para ver imagen ampliada -->
     <div id="modalImagen" style="display:none;" class="modal">
